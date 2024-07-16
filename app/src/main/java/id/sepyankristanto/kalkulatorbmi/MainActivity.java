@@ -1,6 +1,8 @@
 package id.sepyankristanto.kalkulatorbmi;
 
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.RadioButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,21 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText tinggi;
+    private EditText bobot;
+    private EditText umur;
+    private RadioButton rgGender;
+    private RadioButton rdGender;
+
+
+    int tambilBerat;
+    int tampilTinggi;
+    int tampilUmur;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
