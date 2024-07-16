@@ -62,6 +62,28 @@ public class MainActivity extends AppCompatActivity {
         displayTinggi(tampilTinggi);
     }
 
+    public void krgUmur(View view) {
+        tampilUmur = tampilUmur - 1;
+        displayUmur(tampilUmur);
+    } public void tmbUmur(View view){
+        tampilUmur = tampilUmur + 1;
+        displayUmur(tampilUmur);
+    }
+
+
+    private void displayBerat(int number){
+        EditText inputBerat = (EditText) findViewById(R.id.inputBerat);
+        inputBerat.setText("" + number)
+    }
+    private void displayTinggi(int number){
+        EditText inputTinggi = (EditText) findViewById(R.id.inputTinggi);
+        inputTinggi.setText("" + number)
+    }
+    private void displayUmur(int number){
+        EditText inputUmur = (EditText) findViewById(R.id.inputUmur);
+        inputUmur.setText("" + number)
+    }
+
 
 
 
