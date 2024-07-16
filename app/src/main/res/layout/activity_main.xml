@@ -18,17 +18,19 @@
         android:layout_marginRight="8dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <RadioButton
             android:id="@+id/pilihMale"
             android:layout_width="@dimen/_80sdp"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:background="@drawable/radio_flat_selector"
             android:button="@android:color/transparent"
             android:checked="true"
-            android:gravity="center"
             android:paddingLeft="@dimen/_16sdp"
             android:paddingTop="@dimen/_3sdp"
             android:paddingRight="@dimen/_16sdp"
@@ -38,11 +40,11 @@
 
         <RadioButton
             android:id="@+id/pilihFemale"
+            android:gravity="center"
             android:layout_width="@dimen/_80sdp"
             android:layout_height="wrap_content"
             android:background="@drawable/radio_flat_selector"
             android:button="@android:color/transparent"
-            android:gravity="center"
             android:paddingLeft="@dimen/_16sdp"
             android:paddingTop="@dimen/_3sdp"
             android:paddingRight="@dimen/_16sdp"
@@ -56,127 +58,166 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="100dp"
         android:gravity="center_horizontal"
         android:text="@string/label_bobot"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="124dp" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:id="@+id/tambahBerat"
         android:layout_width="50dp"
         android:layout_height="40dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
         android:onClick="tmbBerat"
-        android:text=""
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="480dp" />
+        android:text="@string/logo_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/inputBerat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
         android:text="0"
         android:textSize="45sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="386dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/kurangBerat"
+        app:layout_constraintStart_toEndOf="@+id/kurangBerat"
+        app:layout_constraintTop_toTopOf="@+id/kurangBerat"
+        app:layout_constraintVertical_bias="0.428" />
 
     <Button
         android:id="@+id/kurangBerat"
         android:layout_width="50dp"
         android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="152dp"
         android:onClick="krgBerat"
-        android:text=""
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="82dp" />
+        android:text="@string/logo_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/label_Tinggi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="224dp"
         android:gravity="center_horizontal"
         android:text="@string/height"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="82dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/kurangTinggi"
         android:layout_width="50dp"
         android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="296dp"
         android:onClick="krgTinggi"
-        android:text=""
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="202dp" />
+        android:text="@string/logo_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/inputTinggi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
         android:text="0"
         android:textSize="45sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="318dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/kurangTinggi"
+        app:layout_constraintStart_toEndOf="@+id/kurangTinggi"
+        app:layout_constraintTop_toTopOf="@+id/kurangTinggi"
+        app:layout_constraintVertical_bias="0.595" />
 
     <Button
         android:id="@+id/tambahTinggi"
         android:layout_width="50dp"
         android:layout_height="40dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
         android:onClick="tmbTinggi"
-        android:text=""
-        tools:layout_editor_absoluteX="314dp"
-        tools:layout_editor_absoluteY="470dp" />
+        android:text="@string/logo_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/labelUmur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="372dp"
         android:gravity="center_horizontal"
         android:text="@string/labelUmur"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="378dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/tambahUmur"
         android:layout_width="50dp"
         android:layout_height="40dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
         android:onClick="tmbUmur"
-        android:text=""
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="176dp" />
+        android:text="@string/logo_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/kurangUmur"
         android:layout_width="50dp"
         android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="424dp"
         android:onClick="krgUmur"
-        android:text=""
-        tools:layout_editor_absoluteX="314dp"
-        tools:layout_editor_absoluteY="260dp" />
+        android:text="@string/logo_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/inputUmur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
         android:text="0"
         android:textSize="45sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="314dp"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/kurangUmur"
+        app:layout_constraintStart_toEndOf="@+id/kurangUmur"
+        app:layout_constraintTop_toTopOf="@+id/kurangUmur" />
 
     <Button
         android:id="@+id/calc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="504dp"
         android:onClick="calculateBMI"
         android:text="@string/calculateBMI"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="652dp" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
