@@ -84,6 +84,21 @@ public class MainActivity extends AppCompatActivity {
         inputUmur.setText("" + number)
     }
 
+    public void calculateBMI(View view) {
+        String tinggiStr =tinggi.getText().toString();
+        String bobotStr = bobot.getText().toString();
+
+        if(tinggiStr != null && !"".equals(tinggiStr)
+                && bobotStr != null && !"".equals(bobotStr)){
+            float tinggiValue = Float.parseFloat(tinggiStr) / 100;
+            float bobotValue = Float.parseFloat(bobotStr);
+            float bmi = bobotValue / (tinggiValue*tinggiValue);
+            displayBMI(bmi);
+        }
+    }
+
+
+
 
 
 
